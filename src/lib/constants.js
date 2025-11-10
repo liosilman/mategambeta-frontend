@@ -6,6 +6,6 @@ export const CATEGORIES = [
 ]
 
 export const SHIPPING_COST = 1500
-export const BACKEND_URL = "http://localhost:5000/api"
+export const BACKEND_URL = "mategambeta-backend.vercel.app"
 
 export const ADMIN_PASSWORD = "mate2024"
