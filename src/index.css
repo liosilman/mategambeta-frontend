@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  /* Convert all colors to HSL format for Tailwind compatibility */
+  /* HSL: hue saturation% lightness% */
+
+  /* Mate color palette in HSL */
+  --background: 38 60% 84%;
+  /* mate-cream #e8d5b7 */
+  --foreground: 117 20% 35%;
+  /* mate-green #3d5a3c */
+  --card: 35 43% 79%;
+  /* mate-tan #d4c4a8 */
+  --card-foreground: 117 20% 35%;
+  /* mate-green */
+  --primary: 117 20% 35%;
+  /* mate-green */
+  --primary-foreground: 38 60% 84%;
+  /* mate-cream */
+  --secondary: 35 43% 79%;
+  /* mate-tan */
+  --secondary-foreground: 117 20% 35%;
+  --muted: 33 31% 73%;
+  /* mate-brown #c4b49a */
+  --muted-foreground: 113 15% 47%;
+  /* mate-green-light #5a7a58 */
+  --accent: 113 15% 47%;
+  /* mate-green-light */
+  --accent-foreground: 38 60% 84%;
+  /* mate-cream */
+  --border: 33 31% 73%;
+  --input: 33 31% 73%;
+  --ring: 117 20% 35%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 96%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+  h1,
+  h2,
+  h3 {
+    /* remove Tailwind-only @apply; use equivalent standard CSS */
+    font-weight: 600;
+  }
+}
