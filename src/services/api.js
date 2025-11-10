@@ -1,4 +1,4 @@
-const API_BASE_URL = "mategambeta-backend.vercel.app/api"
+const API_BASE_URL = import.meta.env.VITE_API_URL
 
 const fetchWithTimeout = (url, options = {}, timeout = 3000) => {
   return Promise.race([
